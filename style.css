@@ -1,15 +1,18 @@
+/* Importação de fontes do Google Fonts para estilo diferentes */
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cutive+Mono&family=David+Libre&family=Monoton&family=Noto+Color+Emoji&family=Noto+Sans+Kawi&family=Roboto&family=Space+Mono:ital,wght@1,700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cutive+Mono&family=David+Libre&family=Monoton&family=Noto+Color+Emoji&family=Noto+Sans+Kawi&family=Roboto:ital,wght@0,400;1,700&family=Space+Mono:ital,wght@1,700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cutive+Mono&family=David+Libre&family=Monoton&family=Noto+Color+Emoji&family=Noto+Sans+Kawi&family=Roboto:wght@900&family=Space+Mono:ital,wght@1,700&display=swap');
 
-:root{
-    --font-size: 16px; 
+/* Definição de variáveis CSS personalizadas */
+:root {
+    --font-size: 16px;
     --gray-900: #808080;
-    --white-900:#fff;
+    --white-900: #fff;
 }
 
+/* Reset de estilos para todos os elementos */
 * {
     margin: 0;
     padding: 0;
@@ -17,14 +20,17 @@
     box-sizing: border-box;
 }
 
+/* Estilo para links */
 a {
     color: inherit;
 }
 
+/* Estilo para o corpo da página */
 body {
     background-color: #EFEFEF;
 }
 
+/* Estilo para o cabeçalho */
 .header {
     text-align: center;
     font-family: 'roboto';
@@ -32,10 +38,12 @@ body {
     height: 8rem;
 }
 
+/* Estilo para o logo do Pokemon */
 .pokemon__logo {
     width: 300px;
 }
 
+/* Estilo para contêineres */
 .container {
     width: 1200px;
     max-width: 100%;
@@ -43,23 +51,27 @@ body {
     margin: auto;
 }
 
-.pokebola{
+/* Estilo para a seção de Pokébola */
+.pokebola {
     width: 250px;
 }
 
+/* Estilo para a imagem da Pokébola */
 .pokebola__image {
     width: 250px;
     filter: drop-shadow(15px 15px 15px hsl(79deg 0% 0% /.5));
     cursor: pointer;
 }
 
+/* Efeito de shake quando a imgem da Pokébola é clicada */
 .pokebola__image:active {
     animation: shake 0.1s;
     animation-iteration-count: 200;
 }
 
 /*---------------Pokemon--------------------*/
-.pokemon{
+/* Estilo para seção dos Pókemons */
+.pokemon {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -70,12 +82,11 @@ body {
     width: 500px;
     max-width: 100%;
     filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% /0.5))
-
 }
 
 
-
-.pokestop{
+/* Estilo para a seção do Pokestop */
+.pokestop {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,8 +96,8 @@ body {
     min-height: calc(100vh - 8rem - 52px);
 }
 
-
-.pokemon__wrapperImage{
+/* Estilo para imagem do Pokemon */
+.pokemon__wrapperImage {
     width: 250px;
     height: 250px;
     background-color: #EFEFEF;
@@ -95,31 +106,32 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
-    align-items: center ;
+    align-items: center;
     justify-content: center;
 }
 
+/* Estilo para a imagem do Pokémon */
+.pokemon__image {
 
-.pokemon__image{
-   
     filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% /0.5))
-
 }
 
-.pokemon__name{
+/* Estilo para a o nome do Pokémon */
+.pokemon__name {
     text-transform: uppercase;
     text-align: center;
 }
 
-.pokemon__abilities{
+/* Estilo para a habilidade do Pokémon */
+.pokemon__abilities {
     text-transform: capitalize;
     margin: 18px;
-
 }
 
 
 /*---------------Footer--------------------*/
-.footer{
+/* Estilo para o rodapé da página */
+.footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,11 +141,11 @@ body {
     text-transform: uppercase;
 }
 
-
-.pokemon img{
-    width: 400px; 
+/*Estilo imagem do pokemon   */
+.pokemon img {
+    width: 400px;
     height: 400px;
-   
+
 }
 
 
